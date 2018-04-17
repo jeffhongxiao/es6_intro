@@ -1,7 +1,9 @@
 function timeout(ms) {
   return new Promise((resolve, reject) => {
-    setTimeout(resolve, ms, 'resolved');
-    //reject('rejected');
+    //setTimeout(resolve, ms, 'resolved');
+
+    reject('rejected');
+    // reject(new Error('rejected with an Error'));
   });
 }
 
